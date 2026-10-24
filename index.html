@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0GJ1MT00W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-T0GJ1MT00W');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SQJ's HomePage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+  <link rel="shortcut icon" href="head.jpg" type="image/x-ico">
+</head>
+
+<body class='mdui-theme-primary-deep-purple mdui-drawer-body-left mdui-theme-layout-auto'>
+  <div class="mdui-drawer" id="drawer">
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple" onclick="show('main')">
+        <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+        <div class="mdui-list-item-content">Main</div>
+      </li>
+    </ul>
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple" onclick="show('websites')">
+        <i class="mdui-list-item-icon mdui-icon material-icons">web</i>
+        <div class="mdui-list-item-content">Websites</div>
+      </li>
+    </ul>
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple" onclick="show('social')">
+        <i class="mdui-list-item-icon mdui-icon material-icons">person_pin</i>
+        <div class="mdui-list-item-content">Social Accounts</div>
+      </li>
+    </ul>
+    <ul class="mdui-list">
+      <li class="mdui-list-item mdui-ripple" onclick="show('about')">
+        <i class="mdui-list-item-icon mdui-icon material-icons">info</i>
+        <div class="mdui-list-item-content">About</div>
+      </li>
+    </ul>
+  </div>
+  <div class="mdui-toolbar mdui-color-theme">
+    <a id="toggle" class="mdui-btn mdui-btn-icon">
+      <i class="mdui-icon material-icons">menu</i>
+    </a>
+    <span class="mdui-typo-title">SQJ's HomePage</span>
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="/" class="mdui-btn mdui-btn-icon">
+      <i class="mdui-icon material-icons">refresh</i>
+    </a>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#info'}">
+      <i class="mdui-icon material-icons">more_vert</i>
+    </a>
+  </div>
+  <div id='main'>
+    <div class="mdui-card">
+      <div class="mdui-card-media">
+        <img src="card.jpg" alt="Card image" />
+        <div class="mdui-card-media-covered mdui-card-media-covered-top">
+          <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">This is the homepage of SQJ.</div>
+            <div class="mdui-card-primary-subtitle">Look the drawer for more information.</div>
+          </div>
+          <div class="mdui-card-actions">
+              <a href="https://sqj365.blogspot.com/" target="_blank" rel="noopener" class="mdui-btn mdui-ripple mdui-ripple-white"
+              mdui-tooltip="{content: 'Go To the Blog'}">My Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='websites'>
+    <div class="mdui-tab mdui-tab-full-width" mdui-tab>
+      <a href="#chats" class="mdui-ripple">Chats</a>
+      <a href="#tab2" class="mdui-ripple">Study</a>
+      <a href="#tab1" class="mdui-ripple">Games</a>
+      <a href="#tab3" class="mdui-ripple">Others</a>
+    </div>
+    <div id="chats" class="mdui-p-a-2">
+      <div class="mdui-list">
+        <li class="mdui-subheader">独家原创</li>
+        <a href="https://msgg.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">msg —— 简易的信息交流平台</a>
+        <li class="mdui-subheader">合作项目</li>
+        <a href="https://www.awaland.dpdns.org/" onclick='link()' class="mdui-list-item mdui-ripple ">阿瓦兰系列网站</a>
+      </div>
+    </div>
+    <div id="tab1" class="mdui-p-a-2">
+      <div class="mdui-list">
+        <li class="mdui-subheader">Forked</li>
+        <a href="https://mc1-3.pages.dev/" onclick='link()' class="mdui-list-item mdui-ripple ">Eaglercraft beta 1.3 ——
+          MC 1.3全特性网页版</a>
+        <a href="https://mc1-5.pages.dev/" onclick='link()' class="mdui-list-item mdui-ripple ">Eaglercraft 1.5.2 —— MC
+          1.5.2全特性网页版</a>
+        <a href="https://mc1-8.pages.dev/" onclick='link()' class="mdui-list-item mdui-ripple ">EaglercraftX 1.8 —— MC
+          1.8.8全特性网页版</a>
+      </div>
+    </div>
+    <div id="tab2" class="mdui-p-a-2">
+      <div class="mdui-list">
+        <li class="mdui-subheader">独家原创</li>
+        <a href="https://ptableq.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">PtableQ ——
+          化学元素周期表背诵自查</a>
+        <a href="https://qgl.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">SEWT —— 高考英语词汇全攻略背诵自查</a>
+      </div>
+    </div>
+    <div id="tab3" class="mdui-p-a-2">
+      <div class="mdui-list">
+        <li class="mdui-subheader">独家原创</li>
+        <a mdui-dialog="{target: '#ask'}" class="mdui-list-item mdui-ripple ">Homepage —— 我的个人主页</a>
+        <a href="https://cloudflare-official.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">我不到啊</a>
+        <a href="https://ntm.pages.dev" onclick='link()' class="mdui-list-item mdui-ripple ">骂人的，别点</a>
+      </div>
+    </div>
+  </div>
+  <div id='social'>
+    <ul class="mdui-list mdui-list-dense">
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('https://x.com/sqj365');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/x.jpg" alt="X logo" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">X</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">sqj365</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('https://github.com/sqj365');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/github.jpg" alt="GitHub logo" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Github</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">sqj365</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="copy();">
+        <div class="mdui-list-item-avatar">
+          <img src="social/discord.jpg" alt="Discord logo" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Discord</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">_sqj_</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('https://replit.com/@SQJ');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/replit.jpg" alt="Replit logo" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Replit</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">@SQJ</span>
+          </div>
+        </div>
+      </li>
+      <li class="mdui-divider-inset mdui-m-y-0"></li>
+      <li class="mdui-list-item mdui-ripple" onclick="window.open('mailto:sunqijun_2008@outlook.com');">
+        <div class="mdui-list-item-avatar">
+          <img src="social/email.jpg" alt="Email logo" />
+        </div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title">Email</div>
+          <div class="mdui-list-item-text mdui-list-item-two-line">
+            <span class="mdui-text-color-theme-text">sunqijun_2008@outlook.com</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id='about'>
+    <div class="mdui-typo mdui-typo-padding">
+      <h1>Information</h1>
+      <p>Developed by SQJ</a>. All rights reserved.</p>
+      <p>Repository at: <a href="https://github.com/sqj365/sqj365" target="_blank" rel="noopener">https://github.com/sqj365/sqj365</a></p>
+      <p>Page edited on October 24 2026.</p>
+    </div>
+  </div>
+  <div class="mdui-dialog" id="info">
+    <div class="mdui-dialog-title">给DarkT的小惊喜</div>
+    <div class="mdui-dialog-content">
+      <div class="mdui-typo">
+        <p>DarkT是我的好朋友，特此为他搭建网站：<a href="https://vitaminb.pages.dev" target="_blank" rel="noopener">VitaminB!</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="mdui-dialog" id="ask">
+    <div class="mdui-dialog-title">Aren't you here?</div>
+  </div>
+  <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Grave For Replit
+      <script src="https://replit.com/public/js/replit-badge-v2.js" theme="purple" position="bottom-right"></script> 
+    -->
+</body>
+
+</html>
