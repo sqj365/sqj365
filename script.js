@@ -23,7 +23,7 @@ function show(id){
 
 function link(){
     mdui.snackbar({
-      message: 'Link Opened...'
+      message: 'Link Opening...'
     });
 }
 
